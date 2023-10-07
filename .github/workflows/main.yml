@@ -39,11 +39,7 @@ deploy:
         service_account_key: ${{ secrets.GCP_SA_KEY }}
         export_default_credentials: true
 
-    - name: Authenticate with gcloud
-      run: |
-        echo "${{ secrets.GCP_SA_KEY }}" | gcloud auth activate-service-account --key-file=-
-        gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
-
     - name: Deploy to GAE
       run: |
+        gcloud config set project ${{ secrets.GCP_PROJECT_ID }}
         gcloud app deploy
