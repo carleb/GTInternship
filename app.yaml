@@ -1,0 +1,8 @@
+runtime: nodejs16
+service: gtservice
+entrypoint: 'yarn start-api'
+instance_class: F4_1G
+
+automatic_scaling:
+  min_idle_instances: 1
+  min_instances: 1
