@@ -26,7 +26,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    neds: lint # This ensures deployment only happens if linting succeeds
+    needs: lint # This ensures deployment only happens if linting succeeds
 
     steps:
       - name: Checkout code
