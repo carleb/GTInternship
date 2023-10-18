@@ -6352,9 +6352,12 @@ __metadata:
   linkType: hard
 
 "@types/prompts@npm:^2.0.12":
-  version: 2.4.0
-  resolution: "@types/prompts@npm:2.4.0"
-  checksum: ec75655f07fbc3cb2df60a3e3bdd13bfda0554a16f5541285c4b1cc0610756838a2863dccfc911cbb1385492054c07210512164e3dbef272ec638d631783b278
+  version: 2.4.7
+  resolution: "@types/prompts@npm:2.4.7"
+  dependencies:
+    "@types/node": "*"
+    kleur: ^3.0.3
+  checksum: 2c57b3c419b4be72039dcd0d099c4643a5f7d06cf20156709e87498cd4f6cb4000edc1cafde95786b46d137eb5ace01e3ba83dbc5f29cb69f4b778fdd42b7d81
   languageName: node
   linkType: hard
 
